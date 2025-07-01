@@ -7,6 +7,7 @@ import clientRoutes from "./routes/clientRoutes.js";
 import tiffinRoutes from "./routes/tiffinRoutes.js";
 import kitchenRoutes from "./routes/kitchenRoutes.js";
 import billingRoutes from "./routes/billingRoutes.js";
+import exportRoutes from "./routes/exportRoutes.js";
 
 
 dotenv.config(
@@ -22,6 +23,7 @@ app.use("/api/clients", clientRoutes);
 app.use("/api/tiffin", tiffinRoutes);
 app.use("/api/kitchen", kitchenRoutes);
 app.use("/api/billing", billingRoutes);
+app.use("/api/export", exportRoutes);
 
 
 

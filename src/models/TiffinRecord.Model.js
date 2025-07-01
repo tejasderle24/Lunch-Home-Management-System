@@ -5,6 +5,7 @@ const tiffinRecordSchema = new mongoose.Schema({
   shift: { type: String, enum: ["Morning", "Night"], required: true },
   client: { type: mongoose.Schema.Types.ObjectId, ref: "Client", required: true },
   isDelivered: { type: Boolean, default: false },
+  isSkipped: { type: Boolean, default: false },
   extraItems: { type: String }, // e.g., "2 extra rotis"
   notes: { type: String }
 }, { timestamps: true });
