@@ -5,6 +5,8 @@ import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
 import clientRoutes from "./routes/clientRoutes.js";
 import tiffinRoutes from "./routes/tiffinRoutes.js";
+import kitchenRoutes from "./routes/kitchenRoutes.js";
+import billingRoutes from "./routes/billingRoutes.js";
 
 
 dotenv.config(
@@ -18,7 +20,8 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/clients", clientRoutes);
 app.use("/api/tiffin", tiffinRoutes);
-
+app.use("/api/kitchen", kitchenRoutes);
+app.use("/api/billing", billingRoutes);
 
 
 
